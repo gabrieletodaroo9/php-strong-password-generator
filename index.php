@@ -25,43 +25,55 @@ if ($passLength) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container">
-        <h1 class="text-center fw-bold my-4">Strong Password Generator</h1>
-        <h3 class="text-center fw-semibold mb-4">Generate your secure password</h3>
-        <!-- Form -->
+<body class="vh-100 m-plus-code-latin">
+    <div class="h-100 d-flex flex-column">
+        <header class="bg-light text-dark">
+            <h1 class="text-center fw-bold py-4 m-0 text-uppercase fs-2">Strong Password Generator</h1>
+        </header>
 
-        <div class="d-flex align-items-center justify-content-center">
-            <form action="" method="GET">
-                <label>Lunghezza:</label>
-                <input type="number" name="passLength" class="form-control-inline mb-3">
-
-                <div class="form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="letters" id="letters">
-                    <label class="form-check-label" for="letters">Lettere</label>
+        <div class="main flex-grow-1 d-flex flex-column justify-content-center align-items-center gap-5">
+            <div class="card">
+                <div class="card-header py-3 bg-dark text-light">
+                    <h3 class="text-center fw-semibold">Generate your secure password</h3>
                 </div>
 
-                <div class="form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="numbers" id="numbers">
-                    <label class="form-check-label" for="numbers">Numeri</label>
-                </div>
+                <div class="card-body d-flex align-items-center justify-content-center py-5 px-4">
+                    <form action="" method="GET">
+                        <label>Length:</label>
+                        <input type="number" value="5" min="5" max="20" name="passLength" class="form-control-inline form-control-sm me-3">
 
-                <div class="form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="symbols" id="symbols">
-                    <label class="form-check-label" for="symbols">Simboli</label>
-                </div>
+                        <div class="form-check-inline py-4">
+                            <input class="form-check-input" type="checkbox" name="letters" id="letters">
+                            <label class="form-check-label" for="letters">Letters</label>
+                        </div>
 
-                <button type="submit" class="btn btn-dark btn-sm">Genera</button>
-            </form>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="numbers" id="numbers">
+                            <label class="form-check-label" for="numbers">Numbers</label>
+                        </div>
+
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="symbols" id="symbols">
+                            <label class="form-check-label" for="symbols">Symbols</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark btn-sm">Generate</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
 
-
     </div>
-
 </body>
 
 </html>

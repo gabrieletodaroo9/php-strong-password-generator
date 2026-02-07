@@ -1,0 +1,18 @@
+.main {
+    background-image: url(https://videocdn.cdnpk.net/videos/344b348e-4641-5704-94fd-f1453bd69f1a/horizontal/thumbnails/large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.m-plus-code-latin {
+    font-family: "M PLUS Code Latin", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
